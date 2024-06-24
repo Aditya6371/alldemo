@@ -1,5 +1,6 @@
 //import 'package:experiment1/Global%20constant/Global.dart';
 import 'package:alldemo/location.dart';
+import 'package:alldemo/noInternet.dart';
 
 import '../main.dart';
 import '../user.dart';
@@ -44,6 +45,16 @@ class DrawerWidget extends StatelessWidget {
             onTap: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => MapDemo()));
+            },
+          ),
+          
+          ListTile(
+            leading: const Icon(
+                Icons.signal_cellular_connected_no_internet_0_bar_sharp),
+            title: const Text("No Internet"),
+            onTap: () {
+               Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => NoInternet()));
             },
           ),
           ListTile(
